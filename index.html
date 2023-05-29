@@ -1,1 +1,53 @@
-# happyhappyeat.github.io
+<!DOCTYPE html>
+<html>
+<head>
+  <title>匯率轉換計算機</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <script>
+    function convertCurrency() {
+      // 取得輸入的台幣金額
+      var twdAmount = document.getElementById('twdAmount').value;
+
+      // 檢查輸入是否為有效數字
+      if (isNaN(twdAmount) || twdAmount <= 0) {
+        alert('錯誤的金額，請輸入正確的數字');
+        reset();
+        return;
+      }
+
+    
+
+      // 更新顯示結果
+      document.getElementById('usdAmount').textContent = usdAmount.toFixed(2);
+
+     
+      // 更新其他貨幣金額的顯示結果
+      document.getElementById('eurAmount').textContent = eurAmount.toFixed(2);
+      document.getElementById('jpyAmount').textContent = jpyAmount.toFixed(2);
+      document.getElementById('krwAmount').textContent = krwAmount.toFixed(2);
+      document.getElementById('audAmount').textContent = audAmount.toFixed(2);
+    }
+
+    function reset() {
+      // 清空輸入框和結果
+      document.getElementById('twdAmount').value = "";
+      document.getElementById('usdAmount').textContent = "";
+      document.getElementById('eurAmount').textContent = "";
+      document.getElementById('jpyAmount').textContent = "";
+      document.getElementById('krwAmount').textContent = "";
+      document.getElementById('audAmount').textContent = "";
+    }
+  </script>
+</head>
+<body>
+  <h1>匯率轉換計算機</h1>
+  <label for="twdAmount">請輸入台幣金額：</label>
+  <input type="number" id="twdAmount">
+  <button onclick="convertCurrency()">轉換</button>
+  <button onclick="reset()">重新reset</button>
+  <p>美金金額：<span id="usdAmount"></span></p>
+  <p>歐元金額：<span id="eurAmount"></span></p>
+  <p>日圓金額：<span id="jpyAmount"></span></p>
+  <p>韓元金額：<span id="krwAmount"></span></p>
+  <p>澳幣金額：<span id="audAmount"></span></p>
+  <li><a href="https://rate.bot.com.tw/xrt">參考台灣銀行匯率</a></li
