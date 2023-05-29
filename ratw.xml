@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rates>
+  <rate>
+    <currency>美金 (USD)</currency>
+    <buy>28.80</buy>
+    <sell>29.40</sell>
+  </rate>
+  <rate>
+    <currency>歐元 (EUR)</currency>
+    <buy>33.70</buy>
+    <sell>34.20</sell>
+  </rate>
+  <rate>
+    <currency>日圓 (JPY)</currency>
+    <buy>0.259</buy>
+    <sell>0.266</sell>
+  </rate>
+  <rate>
+    <currency>韓元 (KRW)</currency>
+    <buy>0.0234</buy>
+    <sell>0.0244</sell>
+  </rate>
+  <rate>
+    <currency>澳幣 (AUD)</currency>
+    <buy>21.10</buy>
+    <sell>21.60</sell>
+  </rate>
+</rates>
